@@ -1,0 +1,137 @@
+@import "../variables";
+
+%button-customize {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    color: #fff !important;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    font-weight: normal;
+}
+
+.btn {
+    @extend %button-customize;
+
+    &.btn-primary {
+        background-color: $primary-color;
+        border-color: $primary-color;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-primary-on-hover-color;
+            border-color: $primary-color;
+        }
+    }
+
+    &.btn-primary-outline {
+        border: 1px solid $primary-color;
+        color: $primary-color !important;
+        &:hover,
+        &:focus {
+            background-color: $primary-color;
+            color: #fff !important;
+        }
+    }
+
+    &.btn-primary,
+    &.btn-primary-outline {
+        &:focus {
+            box-shadow: 0 0 0 3px #4531798c !important;
+        }
+    }
+
+    &.btn-green {
+        background-color: $btn-green;
+        color: #fff !important;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-green-on-hover-color;
+            color: #fff !important;
+        }
+    }
+
+    &.btn-blue {
+        background-color: $btn-blue;
+        color: #fff !important;
+
+        &:hover,
+        &:focus {
+            background-color: $btn-blue-on-hover-color;
+            color: #fff !important;
+        }
+    }
+
+    &.btn-blue-outline {
+        border-color: $blue-color !important;
+        background-color: #fff;
+    }
+
+    &.btn-dark,
+    &.btn-dark-outline {
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(51 51 51 / 25%);
+        }
+    }
+
+    &.btn-dark-outline {
+        background-color: #fff;
+        border-color: $dark;
+        color: $dark !important;
+    }
+
+    &.btn-dark-outline,
+    &.btn-dark {
+        &:focus {
+            box-shadow: 0 0 0 0.25rem rgb(51 51 51 / 25%);
+        }
+    }
+
+    &.btn-circle {
+        border-radius: 25px;
+    }
+
+    &.is-loading:after {
+        border-radius: 50%;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        border-style: solid;
+        border-width: 2px;
+        color: rgb(237 237 237 / 0.5);
+        content: "";
+        display: block;
+        height: 1.2rem;
+        position: relative;
+        width: 1.2rem;
+        margin: 7.5px auto;
+        -webkit-animation: spin-around 0.5s linear infinite;
+        animation: spin-around 0.5s linear infinite;
+    }
+}
+
+.btn-primary {
+    &:hover.outline-light {
+        background-color: #fff;
+        border: 1px solid #000;
+        color: #000 !important;
+        box-shadow: 0 5px 15px -10px;
+        transform: translateY(-2px);
+    }
+}
+
+@-webkit-keyframes spin-around {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+@keyframes spin-around {
+    0% {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

@@ -1,0 +1,242 @@
+@import "./variables";
+@import "./colors";
+@import "./mixin";
+
+@media (min-width: $sm) {
+    @for $i from 1 through 8 {
+        .sm\:fs-#{$i} {
+            font-size: $i * 0.5rem;
+        }
+    }
+    @for $i from 1 through 9 {
+        .sm\:fw-#{$i} {
+            font-weight: $i;
+        }
+    }
+}
+
+@media (min-width: $md) {
+    @for $i from 1 through 8 {
+        .md\:fs-#{$i} {
+            font-size: $i * 0.5rem;
+        }
+    }
+    @for $i from 1 through 9 {
+        .md\:fw-#{$i} {
+            font-weight: $i;
+        }
+    }
+}
+
+@media (min-width: $lg) {
+    @for $i from 1 through 8 {
+        .lg\:fs-#{$i} {
+            font-size: $i * 0.5rem;
+        }
+    }
+    @for $i from 1 through 9 {
+        .lg\-fw-#{$i} {
+            font-weight: $i;
+        }
+    }
+}
+
+@for $i from 1 through 9 {
+    .fw-#{$i} {
+        font-weight: $i * 100;
+    }
+}
+
+@for $i from 1 through 32 {
+    .fs-#{$i} {
+        font-size: $i + px;
+    }
+}
+
+/******************************** Start Margin ********************************/
+@for $i from 0 through 48 {
+    .ms#{$i} {
+        margin-left: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .me#{$i} {
+        margin-right: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .mb#{$i} {
+        margin-bottom: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .mt#{$i} {
+        margin-top: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .mx#{$i} {
+        margin-bottom: $i + px;
+        margin-top: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .my#{$i} {
+        margin-left: $i + px;
+        margin-right: $i + px;
+    }
+}
+/******************************** End Margin ********************************/
+
+/* Start Padding */
+@for $i from 0 through 48 {
+    .ps-#{$i} {
+        padding-left: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .pe-#{$i} {
+        padding-right: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .pb-#{$i} {
+        padding-bottom: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .pt#{$i} {
+        padding-top: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .px#{$i} {
+        padding-bottom: $i + px;
+        padding-top: $i + px;
+    }
+}
+
+@for $i from 0 through 48 {
+    .py#{$i} {
+        padding-left: $i + px;
+        padding-right: $i + px;
+    }
+}
+
+@for $i from 0 through 8 {
+    .rotate-#{$i * 45} {
+        transform: rotate($i * 45 + deg);
+    }
+}
+
+// .swal-overlay {
+//     position: fixed;
+//     top: 0;
+//     bottom: 0;
+//     left: 0;
+//     right: 0;
+//     text-align: center;
+//     font-size: 0;
+//     overflow-y: auto;
+//     background-color: rgba(0, 0, 0, 0.8);
+//     z-index: 10000;
+//     pointer-events: none;
+//     opacity: 0;
+//     transition: opacity 0.3s;
+
+//     &.show {
+//         opacity: 1;
+//         pointer-events: auto;
+//     }
+// }
+
+.w-max-content {
+    width: max-content;
+}
+
+.text-capitalize {
+    text-transform: capitalize !important;
+}
+
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+
+.text-lowercasee {
+    text-transform: lowercase !important;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+}
+
+/* End Padding */
+
+.base-border-radius {
+    border-radius: 0.5rem;
+}
+
+.font-montserrat {
+    font-family: "Montserrat", sans-serif;
+}
+
+.font-cabin {
+    font-family: 'Cabin', sans-serif;
+}
+
+.text-primary {
+    color: $primary-color !important;
+}
+
+.text-green {
+    color: $green-color !important;
+}
+
+.border-line-bottom {
+    border-bottom: 1px solid #ccc;
+}
+
+.list-style-none {
+    list-style: none;
+}
+.l-height-1 {
+    line-height: 0.5rem;
+}
+.l-height-2 {
+    line-height: 1rem;
+}
+.l-height-3 {
+    line-height: 1.5rem;
+}
+.l-height-4 {
+    line-height: 2rem;
+}
+
+.text-dark {
+    color: $dark !important;
+}
+
+.border-w-1 {
+    border-width: 1px;
+}
+
+.border-w-2 {
+    border-width: 2px;
+}
+
+.grid-template-columns-1 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.flex-direction-column {
+    flex-direction: column;
+}

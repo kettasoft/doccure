@@ -1,7 +1,86 @@
+$prefix: '';
+
 // Body
 $body-bg: #f8fafc;
 
+// Overlay Background
+$overlay-bg: rgba(0, 0, 0, 0.8);
+
+// Colors
+$green: #28d2a2;
+$primary: #453177;
+$blue: #328bf1;
+
+// Change color on hover
+$btn-green-on-hover-color: #20a781;
+$btn-primary-on-hover-color: #302353;
+$btn-blue-on-hover-color: #1071e0;
+
+$btn-padding-x: 0.5rem;
+$btn-padding-y: 0.5rem;
+
+$btn-sm-font-size: 0.7rem;
+$btn-md-font-size: 0.8rem;
+$btn-lg-font-size: 1rem;
+
 // Typography
 $font-family-sans-serif: 'Nunito', sans-serif;
+$font-family-montserrat: 'Montserrat' sans-serif;
+
+// Typography size
+$font-size-sm: 0.7rem;
 $font-size-base: 0.9rem;
+$font-size-lg: 1rem;
+
 $line-height-base: 1.6;
+
+// form-control
+$form-control-font-size-base: 0.9rem;
+$form-control-font-size-sm: 0.8rem;
+$form-control-font-size-ls: 1rem;
+
+$form-control-border-radius: 0.5rem;
+$form-control-border-size: 1px;
+
+$form-control-shadow-size: 3px;
+
+$form-control-font-family: $font-family-sans-serif;
+
+$form-control-padding-x: 1rem;
+$form-control-padding-y: 0.5rem;
+
+$form-control-primary-border-color: $primary;
+$form-control-green-border-color: $green;
+$form-control-blue-border-color: $blue;
+
+$form-control-border-error-color: #ff1a30;
+$form-control-border-valid-color: #009e54;
+
+// Run on hover
+$form-control-primary-shadow-color: rgba(69, 49, 121, 0.549);
+$form-control-blue-shadow-color: rgba(50, 139, 241, 0.550);
+$form-control-green-shadow-color: rgba(40, 210, 162, 0.550);
+$form-control-box-shadow-error-color: rgba(220, 53, 69, 0.25);
+$form-control-box-shadow-valid-color: rgba(25, 135, 84, 0.25);
+
+$form-control-line-height: 2.2rem;
+
+$form-control-bg-color: #fff;
+
+$btn-primary: $primary;
+$btn-green: $green;
+$btn-blue: $blue;
+
+// Media size screen
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;

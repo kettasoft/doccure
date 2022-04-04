@@ -1,0 +1,30 @@
+@import '../mixin';
+@import '../colors';
+
+@mixin perforated__circle($b_color, $b_width) {
+	border-color: $b_color;
+	border-width: $b_width;
+	border-style: solid;
+	border-radius: 50%;
+}
+
+@mixin circle($background, $w, $h) {
+	@extend %props;
+	@include dimension($w, $h);
+	background-color: $background;
+	border-radius: 50%;
+}
+
+@mixin rotate($deg) {
+	transform: rotate($deg);
+}
+
+%props {
+	position: absolute;
+}
+
+.perforated__circle {
+	@extend %props;
+	@include perforated__circle($primary-color, 30px);
+	@include dimension(150px, 150px);
+}

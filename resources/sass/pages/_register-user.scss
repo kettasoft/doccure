@@ -1,0 +1,61 @@
+.box-login {
+	.box-info {
+	    max-width: 482px;
+	    padding: 48px;
+	    border: 1px solid rgba(12,18,28,.12);
+	    border-left-width: 0;
+	}
+	.CreateUserPage_hiddenXxs__aLiz1 {
+		border-left-width: 1px;
+		border-top-left-radius: 16px;
+		border-bottom-left-radius: 16px;
+
+		ul {
+			padding: 0;
+			li {
+				.ValueProp_iconWrapper {
+					margin-right: 8px;
+					.centralize__icons {
+						font-size: 25px;
+					    width: 40px;
+					    height: 40px;
+					    display: block;
+					    -webkit-box-align: center;
+					    -ms-flex-align: center;
+					    align-items: center;
+					    -webkit-box-sizing: border-box;
+					    box-sizing: border-box;
+					    direction: ltr;
+					    display: -webkit-box;
+					    display: -ms-flexbox;
+					    display: flex;
+					    height: 40px;
+					    -webkit-box-pack: center;
+					    -ms-flex-pack: center;
+					    justify-content: center;
+					    letter-spacing: normal;
+					    line-height: 40px;
+					    text-align: center;
+					    text-decoration: none;
+					    text-transform: none;
+					    vertical-align: middle;
+					    white-space: nowrap;
+					    word-wrap: normal;
+					    -webkit-font-feature-settings: "liga";
+					    -webkit-font-smoothing: antialiased;
+					    -moz-osx-font-smoothing: grayscale;
+					}
+				}
+				display: flex;
+				margin-bottom: .75em;
+			}
+			span {
+				color: rgba(12,18,28,.6) !important;
+			}
+		}
+	}
+	.FormPagePanelSection_root__pG5h7  {
+	    border-top-right-radius: 16px;
+	    border-bottom-right-radius: 16px;
+	}
+}

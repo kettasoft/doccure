@@ -1,0 +1,157 @@
+@import '../colors';
+
+.navbar {
+    backdrop-filter: saturate(180%) blur(20px);
+	.dropdown-menu {
+		transition: all 0.3s;
+		display: block;
+		border-radius: 0.5rem;
+		pointer-events: none;
+	    opacity: 0;
+	    top: 30px;
+	}
+	.dropdown-menu.show {
+		pointer-events: auto;
+		top: 50px;
+		opacity: 1;
+	}
+	.navbar-nav {
+		.nav-link {
+			&.active {
+				color: $black !important;
+			}
+		}
+	}
+	.search-popover {
+		position: absolute;
+        background-color: #fff;
+		inset: 0px auto auto 0px;
+		transform: translate3d(0px, 55px, 0px);
+		border: 1px solid #d6d9dc;
+		z-index: 100;
+
+		.search-popover-result {
+
+		}
+
+		.search-popover-list {
+
+		}
+
+		.search-popover-item {
+			margin-bottom: 0.5rem
+		}
+
+		.search-popover-link {
+			transition: all 0.1s;
+			border-radius: 3px;
+			&:hover, &:focus {
+				background-color: #f8f8f8;
+			}
+			.search-popover-avatar {
+				img {
+					width: 30px;
+				}
+			}
+			.search-popover-name {
+
+			}
+			.search-popover-t {
+				p {
+					font-size: 11px;
+					color: var(--bs-gray)
+				}
+			}
+			.search-popover-price {
+				flex: 1;
+			}
+		}
+	}
+	.search-popover-arrow {
+		&:before {
+			content: '';
+			transform: rotate(45deg);
+		    border-radius: 1.5px;
+		    background: white;
+		    position: absolute;
+		    display: block;
+		    width: 12px;
+		    height: 12px;
+		    z-index: -1;
+		    left: 50%;
+		    top: -6px;
+		    box-shadow: -1px -1px 1px 0 hsl(0deg 0% 0% / 12%);
+		}
+	}
+}
+.box-form-control-search.open {
+    display: block !important;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 8px 13px;
+    background: #d6d9dc;
+}
+
+.box-form-control-search {
+    .form-group div div {
+    }
+}
+@media (max-width: 1159px) {
+	.navbar {
+		ul.li-items, .authBox {
+			width: auto;
+		}
+		.box-form-control-search {
+			display: none;
+		}
+
+		.navbar-collapse {
+			justify-content: space-between;
+		}
+	}
+	.seatchIcon-box {
+		flex: auto;
+		display: block !important;
+	    text-align: end;
+	    margin-right: 0.5rem;
+
+	    .btn {
+	    	color: #333 !important;
+		    font-size: 1.3rem;
+		    line-height: normal;
+		    background: #eee;
+	    }
+	}
+}
+
+@media (max-width: 768px) {
+	.navbar {
+		.box-form-control-search {
+			display: block !important;
+			margin: 1rem 0;
+		}
+		.seatchIcon-box {
+			display: none !important;
+		}
+		.navbar-nav {
+			.authBox .login-link {
+				margin-bottom: 0.5rem !important;
+			}
+		}
+	}
+}
+
+
+
+@media (min-width: 992px) {
+	.box-form-control-search {
+		margin: 0 !important;
+	}
+}
+
+@media (max-width: 576px) {
+	.navbar {
+
+	}
+}

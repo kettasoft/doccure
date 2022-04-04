@@ -1,0 +1,199 @@
+@import '../colors';
+@import '../shapes/shapes';
+
+.login-header {
+    grid-template-columns: repeat(3,1fr);
+}
+
+.p-refreshed_page__heading {
+    font-family: Helvetica;
+    font-size: 48px;
+    letter-spacing: -.75px;
+}
+
+.p-refreshed_page__sub_heading {
+    font-size: 18px;
+    margin-bottom: 32px;
+    max-width: 700px;
+}
+.p-get_started_signin {
+    width: 400px;
+}
+.p-refreshed_page__footer_container {
+    padding: 32px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-autoclog__hook {
+    display: contents;
+}
+.full_width {
+    width: 100%;
+    max-width: 100%;
+}
+
+.d-google_login {
+    background-color: #fff;
+    border: 2px solid #4285f4;
+    color: #4285f4;
+}
+.d-third_party_auth {
+    display: flex;
+    padding: 0;
+}
+.d-button--large {
+    font-size: 18px;
+    font-weight: 900;
+    height: 44px;
+    min-width: 96px;
+    padding: 0 16px 3px;
+}
+.d-button--primary {
+    transition: all 80ms linear;
+    background: #007a5a;
+    color: #fff;
+    font-weight: 900;
+    box-shadow: none;
+}
+.d-button, .d-button:active, .d-button:focus, .d-button:hover {
+    text-decoration: none;
+}
+.d-button {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    align-items: center;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+}
+.d-third_party_auth__icon {
+    margin-right: 12px;
+    width: 18px;
+    height: 18px;
+}
+.d-button--primary:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: 4px;
+    visibility: hidden;
+}
+.d-apple_login, .d-apple_login:hover, .d-apple_login:link, .d-apple_login:visited {
+    color: rgba(var(--sk_primary_foreground,29,28,29),1);
+}
+.margin_top_100 {
+    margin-top: 16px;
+}
+.full_width {
+    width: 100%;
+    max-width: 100%;
+}
+.d-apple_login {
+    background-color: #fff;
+    --saf-0: rgba(var(--sk_primary_foreground,29,28,29),1);
+    border: solid 2px var(--saf-0);
+}
+
+.d-horizontal_content_rule__leftrule, .d-horizontal_content_rule__rightrule {
+    flex-grow: 1;
+    margin: 0;
+}
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    clear: both;
+    margin-bottom: 16px;
+}
+.d-horizontal_content_rule__content {
+    padding: 0 20px;
+}
+.p-get_started_email_form {
+    min-width: 376px;
+}
+.p-get_started_signin__manual {
+    padding: 12px 24px;
+    color: rgba(var(--sk_foreground_max_solid,97,96,97),1);
+    background-color: #f3f3f3;
+    border-radius: 8px;
+}
+.padding_left_75 {
+    padding-left: 12px;
+}
+
+.foo {
+    position: absolute;
+    top: 20%;
+    right: -30px;
+    @include rotate(270deg);
+
+    svg {
+        fill: $green-color;
+    }
+}
+
+.foo-2 {
+    position: absolute;
+    top: -60px;
+    left: 100px;
+    @include rotate(360deg);
+    z-index: 2;
+
+    svg {
+        fill: $primary-color;
+    }
+}
+
+.points {
+    position: absolute;
+    top: 110px;
+    left: 91px;
+    z-index: 1;
+
+    svg {
+        height: 130px;
+        fill: #D9D9D9;
+    }
+}
+
+.points-2 {
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+
+    svg {
+        height: 130px;
+        fill: #D9D9D9;
+    }
+}
+
+.circle-green-sm {
+    @include circle($green-color, 40px, 40px);
+    top: 80px;
+    left: 340px;
+}
+
+.circle-green-md {
+    @include circle($green-color, 60px, 60px);
+    right: 15px;
+    top: 390px;
+}
+
+.circle-green-lg {
+    @include circle($green-color, 160px, 160px);
+    left: -80px;
+    bottom: 0;
+}

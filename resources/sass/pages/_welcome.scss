@@ -1,0 +1,22 @@
+@import '../colors';
+@import '../helpers';
+@import '../mixin';
+
+.title__header {
+	font-size: 3.5rem;
+}
+
+.search__alias_btn {
+	background-color: $green-color;
+}
+
+.SearchForm__custom {
+	border-radius: 20px;
+	margin-left: -30px;
+	padding-left: 40px;
+}
+
+.SearchButton__custom {
+	border-radius: 20px;
+	z-index: 11;
+}

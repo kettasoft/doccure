@@ -1,0 +1,77 @@
+@import '../colors';
+
+.FooterSearchForm__custom {
+	border-radius: 1.25rem;
+	padding-left: 0;
+	font-size: .834rem;
+	margin-right: -2rem;
+	height: 48px;
+}
+
+.FooterSearchButton__custom {
+	border-radius: 1.25rem;
+	background-color: #328af1;
+	color: #fff;
+	font-weight: 700;
+}
+
+.footer-doccure {
+	background-image: radial-gradient(circle at 15% -3%, #110e22, $primary-color 116%);
+
+	.subscribe {
+		padding-top: 4rem;
+
+		.subscribe-content {
+
+		}
+	}
+	.content-list {
+		.footer-logo {
+			img {
+				width: 200px;
+			}
+		}
+		.footer-doccure-about {
+
+		}
+
+		.doccure-social-media {
+			.doccure-social-media-item {
+				.doccure-social-media-link {
+					._icon {
+						&:hover, &:focus {
+							color: $dark;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.lists {
+		.footer-list {
+			.footer-item {
+				.footer-link {
+					color: #c7c7c7;
+					text-decoration: none;
+					&:hover {
+						color: #fff !important;
+					}
+				}
+			}
+		}
+	}
+	.footer-tools {
+		.footer-help {
+			ul li {
+				&:not(:last-child) {
+					margin-right: 1rem;
+				}
+			}
+		}
+	}
+}
+
+
+
+// #9fa6ad

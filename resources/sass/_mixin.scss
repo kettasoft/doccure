@@ -1,0 +1,17 @@
+@mixin dimension($width: null, $height: null) {
+	@if $width {
+		width: $width;
+	}
+	@if $height {
+		height: $height;
+	}
+}
+
+// The overlay background function
+@mixin overlay($color, $opacity) {
+	position: absolute;
+	background-color: rgba($color, $opacity);
+	@include dimension(100%, 100%);
+	left: 0;
+	top: 0;
+}

@@ -1,0 +1,9 @@
+@import '../variables';
+
+$cursorList: alias all-scroll auto cell col-resize context-menu copy;
+
+@each $cursor in $cursorList {
+	.#{$prefix}cursor-#{$cursor} {
+		cursor: $cursor;
+	}
+}

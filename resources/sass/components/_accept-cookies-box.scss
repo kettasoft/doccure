@@ -1,0 +1,12 @@
+@import '../colors';
+
+.cookies-box {
+	position: fixed;
+	background-color: $dark;
+	bottom: 1rem;
+	left: 1rem;
+	border-radius: 0.5rem;
+	z-index: 10000000000000;
+	display: block;
+	padding: 2rem;
+}

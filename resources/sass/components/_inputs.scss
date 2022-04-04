@@ -1,0 +1,127 @@
+@import '../colors';
+@import '../variables';
+@import '../mixins/form-control.scss';
+
+.form-control {
+    font-size: $form-control-font-size-base;
+    border-radius: $form-control-border-radius;
+    background-color: $form-control-bg-color;
+
+    &:hover, &:focus {
+        @include form-control-shadow($form-control-shadow-size, $form-control-primary-shadow-color);
+        border-color: $form-control-primary-border-color;
+    }
+
+    &.blue-theme {
+        &:hover, &:focus {
+            border-color: $form-control-blue-border-color;
+            @include form-control-shadow($form-control-shadow-size, $form-control-blue-shadow-color);
+        }
+    }
+
+    &.green-theme {
+        &:hover, &:focus {
+            border-color: $form-control-green-border-color;
+            @include form-control-shadow($form-control-shadow-size, $form-control-green-shadow-color);
+        }
+    }
+
+    &::placeholder {
+        transition: opacity 0.1s;
+        opacity: 0.8;
+    }
+
+    &:focus::placeholder {
+        opacity: 0;
+    }
+
+    &.sm {
+        padding: 8px;
+        font-size: $form-control-font-size-sm;
+    }
+    &.lg {
+        line-height: $form-control-line-height;
+    }
+    &.found-placeholder-icon {
+        padding-left: 2rem !important;
+    }
+}
+
+.form-control:focus ~ .iconType__style {
+    color: $primary-color;
+}
+.form-control:hover ~ .iconType__style {
+    color: $primary-color;
+}
+
+.form-control:focus ~ .placeholder,.form-control:not(:placeholder-shown).form-control:not(:focus) ~ .placeholder {
+    color: #000;
+    font-size: 12px;
+    background: white;
+    opacity: 1;
+    height: max-content;
+    transform: translateY(-22px);
+}
+
+
+.form-group {
+    position: relative;
+    .placeholder-icon {
+        position: absolute;
+        top: 50%;
+        left: 0.7em;
+        margin-top: -9px;
+        pointer-events: none;
+        fill: #babfc4;
+        line-height: normal;
+    }
+    .placeholder-icon ~ .form-control {
+        padding-left: 2rem !important;
+    }
+    .placeholder {
+        color: #000;
+        font-size: 15px;
+        background: none;
+        position: absolute;
+        left: 14px;
+        bottom: 9px;
+        pointer-events: none;
+
+        transition: all 0.3s;
+    }
+
+    .is-invalid {
+        &:hover, &:focus {
+            border-color: $form-control-border-error-color !important;
+            box-shadow: 0 0 0 0.25rem $form-control-box-shadow-error-color !important;
+        }
+        & ~ .iconType__style {
+            display: none;
+        }
+    }
+    .is-valid {
+        &:hover, &:focus {
+            border-color: $form-control-border-valid-color !important;
+            box-shadow: 0 0 0 0.25rem $form-control-box-shadow-valid-color !important;
+        }
+        & ~ .iconType__style {
+            display: none;
+        }
+    }
+
+    .iconType__style {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        top: 0;
+        display: flex;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        font-size: 22px;
+        color: rgb(12 18 28 / 32%);
+        pointer-events: none;
+
+        transition: all 0.3s;
+    }
+}
